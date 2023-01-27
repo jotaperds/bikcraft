@@ -4,6 +4,9 @@ body {
   padding-bottom: 600px;
 }
 h1,
+h2,
+h3,
+h4,
 p,
 ul {
   margin: 0px;
@@ -19,4 +22,7 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+img[src$=".jpg"] /*Nesse caso o seletor de atributo foi utilizado para que as bordas arredondadas não pegassem no .svg, e sim apenas nos .jpg*/ {
+  border-radius: 4px;
 }
